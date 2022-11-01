@@ -7,6 +7,14 @@
     margin: 0;
 }
 
+#menu-checkbox {
+    display: none;
+}
+
+.hamburger-icon {
+    display: none;
+}
+
 .header {
     background-color: aqua;
 }
@@ -17,6 +25,8 @@
     justify-content: center;
     align-items: center;
     padding: 0px 10px;
+    gap: 10px;
+    font-size: 1.2em;
 }
 
 .nav * {
@@ -27,6 +37,7 @@
     justify-content: center;
     align-items: center;
     padding: 0px 10px;
+    color: black;
 }
 
 a {
@@ -90,4 +101,36 @@ a:hover {
     .section {
         display: block;
     }
+
+    .nav {
+        display: none;
+        position: absolute;
+        background-color: rgb(150, 150, 150);
+        top: 10px;
+        left: 40px;
+        border-radius: 10px;
+    }
+
+    .nav * {
+        background-color: rgb(150, 150, 150);
+        text-decoration: underline;
+    }
+
+    .header {
+        position: relative;
+    }
+
+   #menu-checkbox:checked ~ .nav {
+        display: block;
+   }
+
+   .main {
+    padding: 30px;
+   }
+
+   .hamburger-icon {
+        display: block;
+        font-size: 1.5em;
+        padding: 10px;
+   }
 }
