@@ -1,0 +1,93 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container * {
+    margin: 0;
+}
+
+.header {
+    background-color: aqua;
+}
+
+.nav {
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.nav * {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+a {
+    background-color: red;
+    border-radius: 10px;
+    width: clamp(1px, 50px, 100px);
+    height: clamp(1px, 30px, 50px);
+}
+
+a:hover {
+    background-color: yellow;
+}
+
+.active {
+    background-color: orange;
+}
+
+.section {
+    display: flex;
+}
+
+.main {
+    background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    flex: 3;
+}
+
+.div {
+    width: clamp(1px, 150px, 151px);
+    height: clamp(1px, 150px, 151px);
+    background-color: white;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside {
+    background-color: blueviolet;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    background-color: aqua;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .container {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .section {
+        display: block;
+    }
+}
